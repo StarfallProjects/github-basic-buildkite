@@ -1,6 +1,6 @@
 notify:
   - github_commit_status:
-      context: "my-custom-context"
+      context: "my-custom-context-2"
 steps:
   - label: ":hammer: Example Script"
     command: "script.bat"
