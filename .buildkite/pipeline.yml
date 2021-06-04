@@ -3,4 +3,4 @@ steps:
     command: "script.bat"
     notify:
       - github_commit_status:
-            context: "my-custom-status"
+          context: "my-custom-status"
