@@ -1,6 +1,15 @@
+projects:
+  - label: one
+    path: one
+  - label: two
+    path: two
+
+
 steps:
   - label: ":hammer: Example Script"
-    command: "script.bat"
+    command: 
+      - cd $$BUILDPIPE_PROJECT_PATH
+      - script.bat
     notify:
       - github_commit_status:
-          context: "my-custom-status"
+          context: " $$BUILDPIPE_PROJECT_PATH"
