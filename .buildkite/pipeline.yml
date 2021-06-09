@@ -1,8 +1,8 @@
 projects:
   - label: one
-    path: one
+    path: C:\buildkite-agent\builds\DESKTOP-00VTEVI-1\starfall-projects\github-test\one
   - label: two
-    path: two
+    path: C:\buildkite-agent\builds\DESKTOP-00VTEVI-1\starfall-projects\github-test\two
 
 
 steps:
@@ -12,4 +12,4 @@ steps:
       - script.bat
     notify:
       - github_commit_status:
-          context: " $$BUILDPIPE_PROJECT_PATH"
+          context: "$$BUILDPIPE_PROJECT_PATH"
