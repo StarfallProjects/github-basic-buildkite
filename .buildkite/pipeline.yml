@@ -2,5 +2,4 @@ steps:
   - label: "Run script"
     command: "script.sh"
     agents:
-      #os: "wsl"
       hostname: "$BUILDKITE_AGENT_META_DATA_HOSTNAME"
