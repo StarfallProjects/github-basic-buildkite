@@ -3,6 +3,8 @@ steps:
     command: "script.sh"
     agents:
       os: "wsl"
-notify:
-  - github_pull_request_comment:
-      context: "pr message"
+    notify:
+      - github_pull_request_comment:
+          context: "pr message"
+  - label: "Another script with no comment"
+    command: "echo 'yo'"
