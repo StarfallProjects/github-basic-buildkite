@@ -3,9 +3,6 @@ steps:
     command: "script.sh"
     agents:
       os: "wsl"
-    notify:
-      - github_check
-  - label: "Just another step"
-    command: "echo 'yo'"
-    notify:
-      - github_check
+notify:
+  - github_pull_request_comment:
+      context: "pr message"
