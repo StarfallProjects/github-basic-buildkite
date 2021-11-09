@@ -2,4 +2,6 @@ steps:
   - label: "Run script"
     command: "script.sh"
     agents:
-      hostname: "$BUILDKITE_AGENT_META_DATA_HOSTNAME"
+      os: "wsl"
+notify:
+  - github_check
