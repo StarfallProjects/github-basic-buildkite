@@ -5,3 +5,4 @@ steps:
       os: "wsl"
 notify:
   - github_check
+      context: "custom-check"
