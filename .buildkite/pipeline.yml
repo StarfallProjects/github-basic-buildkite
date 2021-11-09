@@ -6,5 +6,6 @@ steps:
     notify:
       - github_pull_request_comment:
           body: "pr comment"
+          position: "top"
   - label: "Another script with no comment"
     command: "echo 'yo'"
