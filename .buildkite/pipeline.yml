@@ -7,3 +7,5 @@ steps:
       - github_check
   - label: "Just another step"
     command: "echo 'yo'"
+    notify:
+      - github_check
