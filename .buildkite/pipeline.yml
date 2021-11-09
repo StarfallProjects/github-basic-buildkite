@@ -3,6 +3,3 @@ steps:
     command: "script.sh"
     agents:
       os: "wsl"
-notify:
-  - github_check
-      context: "custom-check"
