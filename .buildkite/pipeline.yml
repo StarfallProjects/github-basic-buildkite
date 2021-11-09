@@ -6,4 +6,4 @@ steps:
     notify:
       - github_check
   - label: "Just another step"
-    command: "@ECHO 'yo'"
+    command: "echo 'yo'"
