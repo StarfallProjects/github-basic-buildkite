@@ -3,5 +3,7 @@ steps:
     command: "script.sh"
     agents:
       os: "wsl"
-notify:
-  - github_check
+    notify:
+      - github_check
+  - label: "Just another step"
+    command: "@ECHO 'yo'"
