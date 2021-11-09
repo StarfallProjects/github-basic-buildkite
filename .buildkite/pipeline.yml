@@ -4,7 +4,6 @@ steps:
     agents:
       os: "wsl"
     notify:
-      - github_pull_request_comment:
-          context: "pr message"
+      - github_pull_request_comment
   - label: "Another script with no comment"
     command: "echo 'yo'"
