@@ -4,9 +4,7 @@ steps:
     agents:
       os: "wsl"
     notify:
-      - github_pull_request_comment:
-          body: "pr comment on the position line?"
-          position: 10
-          path: ".buildkite/pipeline.yml"
+      - github_commit_status:
+          context: "custom-stat"
   - label: "Another script with no comment"
     command: "echo 'yo'"
