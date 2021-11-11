@@ -6,7 +6,7 @@ steps:
     notify:
       - github_pull_request_comment:
           body: "pr comment on the position line?"
-          position: 8
+          position: 10
           path: ".buildkite/pipeline.yml"
   - label: "Another script with no comment"
     command: "echo 'yo'"
