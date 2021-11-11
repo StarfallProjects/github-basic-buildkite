@@ -9,4 +9,4 @@ steps:
   - label: "Second script"
     command: "echo 'hello from a step with no notification'"
 notify:
-  github_check
+  - github_check
