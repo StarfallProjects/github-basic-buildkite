@@ -1,10 +1,12 @@
 steps:
-  - label: "Run script"
+  - label: "First script"
     command: "script.sh"
     agents:
       os: "wsl"
     notify:
       - github_commit_status:
-          context: "custom-stat"
-  - label: "Another script with no comment"
-    command: "echo 'yo'"
+          context: "custom-status"
+  - label: "Second script"
+    command: "echo 'hello from a step with no notification'"
+notify:
+  github_check
