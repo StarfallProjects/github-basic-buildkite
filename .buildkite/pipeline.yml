@@ -5,7 +5,8 @@ steps:
       os: "wsl"
     notify:
       - github_pull_request_comment:
-          body: "pr comment"
-          position: "top"
+          body: "pr comment on the position line?"
+          position: 8
+          path: ".buildkite/pipeline.yml"
   - label: "Another script with no comment"
     command: "echo 'yo'"
